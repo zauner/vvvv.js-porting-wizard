@@ -1,0 +1,41 @@
+<html>
+<head>
+  <title>VVVV.js Node Porting Wizard</title>
+  <link rel="stylesheet" type="text/css" href="porting_wizard.css"/>
+  <script language="JavaScript" src="vvvv_js/lib/jquery/jquery-1.4.2.min.js"></script>
+  <script language="JavaScript" src="vvvv_js/vvvv.js"></script>
+  <script language="JavaScript" src="lib/jquery-syntax/jquery.syntax.min.js"></script>
+  <script language="JavaScript" src="porting_wizard.js"></script>
+</head>
+<body>
+  
+<div id="header">VVVV.js Node Porting Wizard</div>
+
+<div id="nodelist">
+  
+</div>
+
+<h1 id="nodename"></h1>
+
+<div id="nodeoptions">
+  <span id="implemented_alert">Note: this node has already been ported.</span>
+  <h2>Author:</h2> <input type="text" name="author" class="code_option" id="author" value="Your Name"/><br/>
+  <h2>Original Author:</h2> <input type="text" name="original_author" class="code_option" id="original_author" value="VVVV Group"/><br/>
+  <div id="pins">
+    <h2>Input Pins:</h2>
+    <div id="input"></div>
+    <h2>Output Pins:</h2>
+    <div id="output"></div>
+    <h2>Invisible Pins:</h2>
+    <div id="invisible"></div>
+  </div>
+  <div id="flags">
+    <h2>Flags:</h2>
+    <input type="checkbox" name="auto_evaluate" class="code_option" id="auto_evaluate"/>Auto Evaluate
+  </div>
+</div>
+
+<pre class="syntax javascript syntax-container" id="template"></code>
+
+</body>
+</html>

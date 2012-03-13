@@ -1,0 +1,9 @@
+# The path to install the code
+prefix: "public"
+# The options for the stylesheet generation
+themes:
+  - base
+  - modern
+  - bright
+# Enable minification
+minify: true
