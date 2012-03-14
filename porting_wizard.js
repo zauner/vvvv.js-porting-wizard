@@ -12,7 +12,7 @@ $(document).ready(function() {
     success: function(response) {
       var $nodeList = $(response);
       $nodeList.find('node').each(function() {
-        var systemname = $(this).attr('systemname');
+        var systemname = $(this).attr('systemname').replace(' Legacy', '');
         $nodeLink = $('<a href="#'+systemname+'" class="nodelink">'+systemname+'</a>');
         if (VVVV.NodeLibrary[systemname.toLowerCase()])
           $nodeLink.addClass("implemented");
