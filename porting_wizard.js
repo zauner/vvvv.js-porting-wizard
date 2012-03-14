@@ -56,7 +56,7 @@ $(document).ready(function() {
           $('#implemented_alert').show();
         else
           $('#implemented_alert').hide();
-        var $node = $nodeList.find('node[systemname='+systemname+']').first();
+        var $node = $nodeList.find('node[systemname="'+systemname+'"]').first();
         $('#nodename').html(systemname);
         if ($node.attr('autoevaluate')>0)
           $('#auto_evaluate').attr('checked', 'checked');
