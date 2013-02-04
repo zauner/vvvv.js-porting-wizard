@@ -48,7 +48,7 @@ VVVV.Nodes.{{objectname}} = function(id, graph) {
     }
     
     // you also might want to do stuff like this:
-    {{misc}}
+{{misc}}
   }
 
 }
